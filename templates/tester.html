@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Formula 1 site and blog</title>
+        <meta name="description" content="Formula 1 website and blog">
+        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,600,800,300,700,800italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <!-- Google Fonts -->
+		<script src="https://use.fontawesome.com/c480767f11.js"></script>
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/animate.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/magnific-popup.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/style.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/revslider/revslider-index.css">
+        <link rel="stylesheet" id="color-scheme" href="http://gcustomair.appspot.com/styles/boss/css/colors/darkblue.css">
+        <!-- Favicon and Apple Icons -->
+        <link rel="icon" type="image/png" href="http://gcustomair.appspot.com/styles/boss/images/icons/favicon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="http://gcustomair.appspot.com/styles/boss/images/icons/faviconx57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://gcustomair.appspot.com/styles/boss/images/icons/faviconx72.png">
+        <!-- Modernizr -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/modernizr.js"></script>
+        <!--- jQuery -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.min.js"></script>
+        <!-- Queryloader -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/queryloader2.min.js"></script>
+    </head>
+    <body>
+    <div class="boss-loader-overlay"></div><!-- End .boss-loader-overlay -->
+    <div id="wrapper">
+        <header id="header" role="banner">
+            <div class="collapse navbar-white special-for-mobile" id="header-search-form">
+                <div class="container">
+                    <form class="navbar-form animated fadeInDown" >
+                        <input type="search" id="s" name="s" class="form-control" placeholder="Search in here...">
+                        <button type="submit" class="btn-circle" title="Search"><i class="fa fa-search"></i></button>
+                    </form>
+                </div><!-- End .container -->
+            </div><!-- End #header-search-form -->
+            <nav class="navbar navbar-white navbar-transparent animated-dropdown ttb-dropdown" role="navigation">
+                <div class="navbar-top clearfix">
+                    <div class="container">
+                        <div class="pull-left">
+                            <ul class="navbar-top-nav clearfix hidden-sm hidden-xs">
+                                <li><a href="/profile/"><i class="fa fa-user"></i>My Account</a></li>
+                                <li><a href="/login/"><i class="fa fa-external-link"></i>Login</a></li>
+                                <li><a href="/register/"><i class="fa fa-terminal"></i>Register</a></li>
+                            </ul>
+                            <div class="dropdown account-dropdown visible-sm visible-xs">
+                                <a class="dropdown-toggle" href="#" id="account-dropdown" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-user"></i>My Account
+                                <span class="angle"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="account-dropdown">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile/"><i class="fa fa-user"></i>My Account</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/login/"><i class="fa fa-external-link"></i>Login</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/register/"><i class="fa fa-terminal"></i>Register</a></li>
+                                </ul>
+                            </div><!-- End .account-dropdown -->
+                        </div><!-- End .pull-left -->
+                        <div class="pull-right">
+                           <div class="social-icons pull-right hidden-xs">
+                                <a href="#" class="social-icon icon-facebook" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-twitter" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-google-plus" title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div><!-- End .social-icons -->
+                       </div><!-- End .pull-right -->
+                    </div><!-- End .container -->
+                </div><!-- End .navbar-top -->
+                <div class="navbar-inner sticky-menu">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle btn-circle pull-right collapsed" data-toggle="collapse" data-target="#main-navbar-container">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand text-uppercase" href="index.html" title="Formula 1">Formula 1</a>
+                            <button type="button" class="navbar-btn btn-icon btn-circle pull-right last visible-sm visible-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>
+                        </div><!-- End .navbar-header -->
+                        <div class="collapse navbar-collapse" id="main-navbar-container">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active megamenu-container">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home<span class="angle"></span></a>
+                                    <div class="dropdown-menu megamenu" role="menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <ul>
+                                                        <li><a href="index.html">Home </a></li>
+                                                    </ul>
+                                                </div><!-- End .col-sm-3 -->
+                                            </div><!-- End .row -->
+                                        </div><!-- End .container -->
+                                    </div><!-- End .megamenu -->
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop<span class="angle"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+
+                                        <li class="dropdown sub-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login<span class="angle"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="login.html">Login - Version 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="register.html">Register - Version 1</a></li>
+                                        <li><a href="recover-password.html">Password Recover</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button type="button" class="navbar-btn btn-icon btn-circle navbar-right last  hidden-sm hidden-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container -->
+                </div><!-- End .navbar-inner -->
+            </nav>
+        </header><!-- End #header -->
+        <div id="content" role="main" class="no-padding">
+            <div id="revslider-container">
+                <div id="revslider">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Constructors" data-thumb="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide3.jpg">
+                            <!-- background image -->
+                            <img src="http://gcustomair.appspot.com/styles/boss/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide3.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle lfb ltt"
+                                data-x="center"
+                                data-y="155"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="400"
+                                style="z-index: 10">This is a site dedicated to all things F1
+                            </div>
+
+                            <div class="tp-caption rev-title lfb ltt"
+                                data-x="center"
+                                data-y="210"
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6">2016 Formula 1 stats, standings & Blog
+                            </div>
+                            <div class="tp-caption rev-text lfb ltt"
+                                data-x="center"
+                                data-y="290"
+                                data-speed ="1000"
+                                data-start="1200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 12">Please feel free to blog about your favorites
+                            </div>
+                            <div class="tp-caption rev-btn lfb ltt"
+                                data-x="center"
+                                data-y="360"
+                                data-speed="1000"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                                    <a href="#" class="btn btn-red btn-border radius-lger min-width"><strong>BLOG</strong></a>
+                                    <a href="#" class="btn btn-red radius-lger min-width"><strong>BLOG POST</strong></a>
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Drivers" data-thumb="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide2.jpg">
+                            <!-- background image -->
+                            <img src="http://gcustomair.appspot.com/styles/boss/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide2.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle lfb ltt"
+                                data-x="center"
+                                data-y="155"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="400"
+                                style="z-index: 10">Grand Prix and Race Information
+                            </div>
+                            <div class="tp-caption rev-title lfb ltt"
+                                data-x="center"
+                                data-y="210"
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6">Formula 1
+                            </div>
+                            <div class="tp-caption rev-text lfb ltt"
+                                data-x="center"
+                                data-y="290"
+                                data-speed ="1000"
+                                data-start="1200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 12">Our Formula 1 site is strictly for racing fans.
+                            </div>
+                            <div class="tp-caption rev-btn lfb ltt"
+                                data-x="center"
+                                data-y="360"
+                                data-speed="1000"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                                    <a href="#" class="btn btn-red btn-border radius-lger min-width"><strong>BLOG</strong></a>
+                                    <a href="#" class="btn btn-red radius-lger min-width"><strong>BLOG POST</strong></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End #revslider -->
+                <a href="#id-to-scroll" class="scroll-btn light" data-offset="-55" data-0="opacity:1" data-top-bottom="opacity:0;" title="Go Down"><span></span></a>
+            </div><!-- End #revslider-container -->
+            <div class="container-fluid no-padding" id="id-to-scroll">
+                <div class="row no-margin">
+                    <div class="col-sm-4 bg-custom">
+                        <div class="colored-box">
+                            <h3 class="text-white mb20">Drivers</h3>
+                            <p>Every team in Formula One must run two cars in every session in a Grand Prix weekend, and every team may use up to four drivers in a season. A team may also run two additional drivers in Free Practice sessions which are often used to test potential new drivers for a career as a Formula One driver.[Wikipedia]</p>
+                            <a href="https://en.wikipedia.org/wiki/Formula_One" class="btn btn-white v2 btn-border no-radius">Click Me!</a>
+                        </div><!-- End .colored-box -->
+                    </div><!-- End .col-sm-4 -->
+                    <div class="col-sm-4 bg-custom2">
+                        <div class="colored-box">
+                            <h3 class="text-white mb20">Contructors</h3>
+                            <p>Since 1981,[57] Formula One teams have been required to build the chassis in which they compete, and consequently the terms "team" and "constructor" became more or less interchangeable. This requirement distinguishes the sport from series such as the IndyCar Series which allows teams to purchase chassis.[Wikipedia]</p>
+                            <a href="https://en.wikipedia.org/wiki/Formula_One" class="btn btn-white btn-border no-radius">Click Me!</a>
+                        </div><!-- End .colored-box -->
+                    </div><!-- End .col-sm-4 -->
+                    <div class="col-sm-4 bg-custom">
+                        <div class="colored-box">
+                            <h3 class="text-white mb20">Race</h3>
+                            <p>The race begins with a warm-up lap, after which the cars assemble on the starting grid in the order they qualified. This lap is often referred to as the formation lap, as the cars lap in formation with no overtaking (although a driver who makes a mistake may regain lost ground provided he has not fallen to the back of the field).[Wikipedia]</p>
+                            <a href="https://en.wikipedia.org/wiki/Formula_One" class="btn btn-white v2 btn-border no-radius">Click Me!</a>
+                        </div><!-- End .colored-box -->
+                    </div><!-- End .col-sm-4 -->
+                </div><!-- End .row -->
+            </div><!-- End .container-fluid -->
+            <div class="bg-light-blue pt65 pb15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Italian Grand Prix</h3>
+                                    <p>The Italian Grand Prix (Gran Premio d'Italia) is one of the longest running events on the Formula One calendar.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.15s">
+                                <span class="service-icon"><i class="fa fa-trophy"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Monaco Grand Prix</h3>
+                                    <p>The Monaco Grand Prix (French: Grand Prix de Monaco) is a Formula One motor race held each year on the Circuit de Monaco.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.3s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">British Grand Prix</h3>
+                                    <p>The British Grand Prix is a race in the calendar of the FIA Formula One World Championship, currently held at the Silverstone Circuit.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                    </div><!-- End .row -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.15s">
+                                <span class="service-icon"><i class="fa fa-trophy"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">United States Grand Prix</h3>
+                                    <p>The United States Grand Prix is a motor race which has been run on and off since 1908, when it was known as the American Grand Prize.</p>
+
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.3s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">German Grand Prix</h3>
+                                    <p>The German Grand Prix (German: Großer Preis von Deutschland) is a bi-annual automobile race that has been held most years since 1926.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.45s">
+                                <span class="service-icon"><i class="fa fa-trophy"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Belgian Grand Prix</h3>
+                                    <p>The Belgian Grand Prix (Dutch: Grote Prijs van België; French: Grand Prix de Belgique; German: Großer Preis von Belgien) is an automobile race.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                    </div><!-- End .row -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.3s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Spanish Grand Prix</h3>
+                                    <p>The Spanish Grand Prix (Spanish: Gran Premio de España, Catalan: Gran Premi d'Espanya) is a Formula One race currently held at the Circuit de Barcelona-Catalunya in Barcelona.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.45s">
+                                <span class="service-icon"><i class="fa fa-trophy"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Canadian Grand Prix</h3>
+                                    <p>The Canadian Grand Prix (French: Grand Prix du Canada) is an annual auto race held in Canada since 1961.[1] It has been part of the Formula One World Championship since 1967.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service wow fadeInUp" data-wow-delay="0.6s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title text-uppercase">Brazilian Grand Prix</h3>
+                                    <p>The Brazilian Grand Prix (Portuguese: Grande Prêmio do Brasil) is a Formula One championship race which is currently held at the Autódromo José Carlos Pace in Interlagos neighborhood.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-sm-4 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .bg-lightgray -->
+            <div class="bg-lightergray no-overflow pt70">
+                <div class="container ">
+                    <h2 class="title-underblock custom text-uppercase text-center mb50">Awesome Manufacturers</h2>
+                    <img src="http://mywebsitepic.appspot.com/images/f11.jpg" alt="Homepages" class="img-responsive center-block wow fadeInUp">
+                </div><!-- End .container -->
+            </div><!-- End .bg-lightergray -->
+            <hr class="gray mt0 mb65">
+            <div class="callout custom no-border">
+                <div class="mb5"></div><!-- space -->
+                <div class="container">
+                    <div class="callout-wrapper">
+                        <div class="callout-left">
+                            <h2 class="callout-title">Don't forget this is the only chance you will get to have a free WIFI stat. Call now!</h2>
+                            <p class="callout-desc">With any refrigerated air conversion we are giving away a free WIFI thermostat with your installation.</p>
+                        </div><!-- End .callout-left -->
+                        <div class="callout-right">
+                            <a href="http://refrigeratedairconversion.com" class="btn btn-white v2 btn-border radius-lger min-width">Details here!</a>
+                        </div><!-- End .callout-right -->
+                    </div><!-- End .callout-wrapper -->
+                </div><!-- End .container -->
+                <div class="mb10"></div><!-- space -->
+            </div><!-- End .callout -->
+            <div class="mb10"></div><!-- space -->
+            <div class="no-overflow">
+                <div class="container">
+                    <header class="title-block text-center mb60">
+                        <h2 class="title-underblock custom text-uppercase text-center mb20"><span>Typical WIFI stat</span></h2>
+                        <p>Forgot to turn off the air while at work No problem, pull out your phone and have complete control. Turn it on when traveling, cool/warm when you get home.</p>
+                    </header>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service vertical text-right wow fadeInLeft">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom  text-uppercase text-right">Michael Schumacher</h3>
+                                    <p>He is a seven-time Formula One World Champion and is widely regarded as one of the greatest Formula One drivers of all time.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                            <div class="service vertical text-right wow fadeInLeft" data-wow-delay="0.15s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom  text-uppercase text-right">Sebastian Vettel</h3>
+                                    <p>German racing driver, currently driving in Formula One for Scuderia Ferrari. He is a four-time Formula One World Champion.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                            <div class="service vertical text-right wow fadeInLeft" data-wow-delay="0.3s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom text-uppercase text-right">Ayrton Senna da Silva</h3>
+                                    <p>won three Formula One world championships for McLaren and is regarded as one of the greatest Formula One drivers of all time.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-4 -->
+                        <div class="mb30 visible-xs"></div><!-- space -->
+                        <div class="col-md-4 hidden-sm">
+                            <img src="http://mywebsitepic.appspot.com/images/f12.jpg" alt="Phone 2" class="img-responsive center-block wow zoomIn">
+                        </div><!-- End .col-md-4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service vertical wow fadeInRight">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom  text-uppercase">Alain Marie Pascal Prost,</h3>
+                                    <p>A four-time Formula One Drivers' Champion From 1987 until 2001 Prost held the record for most Grand Prix victories.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                            <div class="service vertical wow fadeInRight" data-wow-delay="0.15s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom  text-uppercase">Fernando Alonso Díaz</h3>
+                                    <p>He won the Formula One World Drivers' Championship title at the age of 24 years and 58 days, at the time making him the youngest Formula One World Drivers' Champion. </p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                            <div class="service vertical wow fadeInRight" data-wow-delay="0.3s">
+                                <span class="service-icon"><i class="fa fa-flag-checkered"></i></span>
+                                <div class="service-content">
+                                    <h3 class="service-title title-underblock custom text-uppercase">Sir John Young "Jackie" Stewart</h3>
+                                    <p> British former Formula One racing driver from Scotland. Nicknamed the "Flying Scot", he competed in Formula One between 1965 and 1973, winning three World Drivers' Championships.</p>
+                                </div><!-- End .service-content -->
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-4 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .no-overflow -->
+            <div class="bg-image callout callout-vertical larger no-border no-margin fullwidth" data-bgattach="http://gcustomair.appspot.com/styles/boss/images/backgrounds/index/bg1.jpg">
+                <div class="mb10"></div><!-- space -->
+                <h2 class="callout-title text-white">F1: Nico Rosberg wins Belgian Grand Prix; Lewis Hamilton third – as it happened</h2>
+                <p class="callout-desc text-white">Nico Rosberg led a thrilling race from start to finish, closing the gap at the top of the drivers’ championship to nine points, Lewis Hamilton came from the back of the grid to third!</p>
+                <div class="mb10"></div><!-- space -->
+                <div class="callout-action">
+                    <a href="/#/drivers" class="btn btn-white btn-border radius-lger min-width">Back to Drivers</a>
+                    <a href="/blog" class="btn btn-white radius-lger min-width">Blog</a>
+                </div><!-- End .callout-action -->
+                <div class="mb10"></div><!-- space -->
+            </div><!-- End .callout -->
+        </div><!-- End #content -->
+        <footer id="footer" class="footer-inverse" role="contentinfo">
+            <div id="footer-inner" class="smaller">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-push-3 col-xs-8 col-xs-push-2">
+                            <div class="widget">
+                                <div class="corporate-widget text-center">
+                                    <span class="footer-logo bigger">Formula One</span><!-- End .footer-logo -->
+                                    <p>We are a glad you came around and checked out the site. It is automatically updated so come back and see us soon!</p>
+
+                                </div><!-- End corporate-widget -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-md-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End #footer-inner -->
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="social-icons text-center">
+                                <a href="#" class="social-icon icon-facebook add-tooltip" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-twitter add-tooltip" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-google-plus add-tooltip" title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-skype add-tooltip" title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-linkedin add-tooltip" title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-behance add-tooltip" title="Behance">
+                                    <i class="fa fa-behance"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-flickr add-tooltip" title="Flickr">
+                                    <i class="fa fa-flickr"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-reddit add-tooltip" title="Reddit">
+                                    <i class="fa fa-reddit"></i>
+                                </a>
+                            </div><!-- End .social-icons -->
+                            <p class="copyright">Designed and Developed by Rick.  All rights reserved. &copy; <a href="ontopwebdesigns.com">www.ontopwebdesigns.com</a></p>
+                        </div><!-- End .col-md-6 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End #footer-bottom -->
+        </footer><!-- End #footer -->
+    </div><!-- End #wrapper -->
+    <a href="#top" id="scroll-top" title="Back to Top"><i class="fa fa-angle-up"></i></a>
+	<!-- END -->
+    <!-- Smoothscroll -->
+    <script src="http://gcustomair.appspot.com/styles/boss/js/smoothscroll.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/bootstrap.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.hoverIntent.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.nicescroll.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/waypoints.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/waypoints-sticky.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.debouncedresize.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/retina.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/owl.carousel.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jflickrfeed.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/twitter/jquery.tweet.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/skrollr.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.countTo.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/isotope.pkgd.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.magnific-popup.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.themepunch.tools.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/wow.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.validate.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/contact.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/main.js"></script>
+    <script>
+        (function () {
+            "use strict";
+            // Slider Revolution
+            jQuery('#revslider').revolution({
+                delay:8000,
+                startwidth:1170,
+                startheight:500,
+                fullWidth:"on",
+                fullScreen:"on",
+                hideTimerBar: "off",
+                spinner:"spinner4",
+                navigationStyle: "preview4",
+                soloArrowLeftHOffset:20,
+                soloArrowRightHOffset:20
+            });
+        }());
+    </script>
+    </body>
+</html>

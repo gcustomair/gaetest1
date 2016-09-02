@@ -1,0 +1,85 @@
+<div class="jumbotron" id="cool7">
+
+      <img src="http://mywebsitepic.appspot.com/images/formula1.png">
+  <p><a class="btn btn-danger btn-lg" href="https://www.formula1.com/en/championship/results/2016-driver-standings.html" role="button">Learn more</a></p>
+  </div>
+
+</div>
+<section id="main">
+    <div id="cool2">
+ <a href="#/drivers/" class="btn btn-primary btn-lg active" role="button">Back to drivers list</a>
+    </div>
+  <nav id="secondary" class="main-nav">
+    <div class="driver-picture">
+      <div class="avatar">
+        <img ng-show="driver" src="img/drivers/{{driver.Driver.driverId}}.png" width="100px" height="100px"/>
+        <img ng-show="driver" src="img/flags/{{driver.Driver.nationality}}.png" width="35px" height="30px"/><br/>
+        {{driver.Driver.givenName}} {{driver.Driver.familyName}}
+      </div>
+    </div>
+    <div class="driver-status">
+     <strong> Country: {{driver.Driver.nationality}}</strong>   <br/>
+     <strong> Team: {{driver.Constructors[0].name}}</strong><br/>
+      <strong>Birth: {{driver.Driver.dateOfBirth}}</strong><br/>
+      <a href="{{driver.Driver.url}}" class="btn btn-primary active" target="_blank">Biography</a>
+    </div>
+  </nav>
+    <div id="cool">
+  <div class="main-content">
+    <table class="table table-bordered">
+      <thead>
+        <tr><th colspan="5">Formula 1 2016 Results</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Round</td> <td>Grand Prix</td> <td>Team</td> <td>Grid</td> <td>Race</td>
+        </tr>
+        <tr ng-repeat="race in races">
+          <td>{{race.round}}</td>
+          <td><img  src="img/flags/{{race.Circuit.Location.country}}.png" />{{race.raceName}}</td>
+          <td>{{race.Results[0].Constructor.name}}</td>
+          <td>{{race.Results[0].grid}}</td>
+          <td>{{race.Results[0].position}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</section>
+    </div>
+<footer id="footer" style="background-color: #ececec">
+<div class="navbar navbar-default navbar-bottom">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>About</h5>
+						<li><a href="http://ontopwebdesigns.com">Home</a></li>
+						<li><a href="http://ontopwebdesigns.com">About Us</a></li>
+						<li><a href="http://ontopwebdesigns.com">Contact Us</a></li>
+				</ul>
+            </div>
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>Social</h5>
+					<!--<li><a href="/blog">Blog</a></li>-->
+					<li><a target="_blank" href="https://twitter.com">Twitter</a></li>
+					<li><a target="_blank" href="http://www.youtube.com">YouTube</a></li>
+					<li><a target="_blank" href="https://plus.google.com">Google+</a></li>
+					<li><a target="_blank" href="https://facebook.com">Facebook</a></li>
+				</ul>
+            </div>
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>Legal</h5>
+					<li><a href="http://ontopwebdesigns.com">Terms of Use</a></li>
+					<li><a href="http://ontopwebdesigns.com">Privacy Notice (updated Jan 22, 2015)</a></li>
+				</ul>
+            </div>
+        </div>
+        <center><small>&copy; 2016 On Top Web Designs</small></center>
+
+    </div>
+</div>
+</footer>

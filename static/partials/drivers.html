@@ -1,0 +1,67 @@
+<div class="jumbotron" id="cool7">
+
+      <img src="http://mywebsitepic.appspot.com/images/formula1.png">
+  <p><a class="btn btn-danger btn-lg" href="https://www.formula1.com/en/championship/results/2016-driver-standings.html" role="button">Learn more</a></p>
+  </div>
+
+</div>
+<div id="cool">
+<input type="text" ng-model="nameFilter" placeholder="Search..."/>
+<table class="table table-bordered">
+<thead>
+  <tr><th colspan="4">Drivers Championship Standings</th></tr>
+</thead>
+<tbody>
+    <tr>
+          <td>Place</td> <td>Driver</td> <td>Team</td> <td>Points</td>
+        </tr>
+  <tr ng-repeat="driver in driversList | filter: searchFilter">
+    <td>{{$index + 1}}</td>
+    <td>
+      <img src="img/flags/{{driver.Driver.nationality}}.png" />
+      <a href="#/drivers/{{driver.Driver.driverId}}">
+	  	{{driver.Driver.givenName}}&nbsp;{{driver.Driver.familyName}}
+	  </a>
+	</td>
+    <td>{{driver.Constructors[0].name}}</td>
+    <td>{{driver.points}}</td>
+  </tr>
+
+</tbody>
+</table>
+</div>
+<footer id="footer" style="background-color: #ececec">
+<div class="navbar navbar-default navbar-bottom">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>About</h5>
+						<li><a href="http://ontopwebdesigns.com">Home</a></li>
+						<li><a href="http://ontopwebdesigns.com">About Us</a></li>
+						<li><a href="http://ontopwebdesigns.com">Contact Us</a></li>
+				</ul>
+            </div>
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>Social</h5>
+					<!--<li><a href="/blog">Blog</a></li>-->
+					<li><a target="_blank" href="https://twitter.com">Twitter</a></li>
+					<li><a target="_blank" href="http://www.youtube.com">YouTube</a></li>
+					<li><a target="_blank" href="https://plus.google.com">Google+</a></li>
+					<li><a target="_blank" href="https://facebook.com">Facebook</a></li>
+				</ul>
+            </div>
+            <div class="col-md-4">
+                <ul style="list-style-type: none;">
+					<h5>Legal</h5>
+					<li><a href="http://ontopwebdesigns.com">Terms of Use</a></li>
+					<li><a href="http://ontopwebdesigns.com">Privacy Notice (updated Jan 22, 2015)</a></li>
+				</ul>
+            </div>
+        </div>
+        <div style="text-align: center;"><small>&copy; 2016 On Top Web Designs</small></div>
+
+    </div>
+</div>
+</footer>

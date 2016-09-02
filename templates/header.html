@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Formula 1 site and blog</title>
+        <meta name="description" content="Formula 1 website and blog">
+
+        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,600,800,300,700,800italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <!-- Google Fonts -->
+		<script src="https://use.fontawesome.com/c480767f11.js"></script>
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/animate.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/magnific-popup.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/style.css">
+        <link rel="stylesheet" href="http://gcustomair.appspot.com/styles/boss/css/revslider/revslider-index.css">
+        <link rel="stylesheet" id="color-scheme" href="http://gcustomair.appspot.com/styles/boss/css/colors/darkblue.css">
+
+        <!-- Favicon and Apple Icons -->
+        <link rel="icon" type="image/png" href="http://gcustomair.appspot.com/styles/boss/images/icons/favicon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="http://gcustomair.appspot.com/styles/boss/images/icons/faviconx57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://gcustomair.appspot.com/styles/boss/images/icons/faviconx72.png">
+
+        <!-- Modernizr -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/modernizr.js"></script>
+
+        <!--- jQuery -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.min.js"></script>
+
+        <!-- Queryloader -->
+        <script src="http://gcustomair.appspot.com/styles/boss/js/queryloader2.min.js"></script>
+
+    </head>
+
+    <body>
+	<div class="container" style="min-height:100%">
+	<div class="row">
+    		<div class="col-sm-8">
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+	    {% for message in messages %}
+		  <div class="alert alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			{{message}}
+		  </div>
+		{% endfor %}
+	  {% endif %}
+	{% endwith %}
+            <div class="boss-loader-overlay"></div><!-- End .boss-loader-overlay -->
+    </div>
+    </div>
+    </div>
+    <div id="wrapper">
+        <header id="header" role="banner">
+            <div class="collapse navbar-white special-for-mobile" id="header-search-form">
+                <div class="container">
+                    <form class="navbar-form animated fadeInDown" >
+                        <input type="search" id="s" name="s" class="form-control" placeholder="Search in here...">
+                        <button type="submit" class="btn-circle" title="Search"><i class="fa fa-search"></i></button>
+                    </form>
+                </div><!-- End .container -->
+            </div><!-- End #header-search-form -->
+            <nav class="navbar navbar-white navbar-transparent animated-dropdown ttb-dropdown" role="navigation">
+
+                <div class="navbar-top clearfix">
+                    <div class="container">
+                        <div class="pull-left">
+                            <ul class="navbar-top-nav clearfix hidden-sm hidden-xs">
+                                <li><a href="/profile/"><i class="fa fa-user"></i>My Account</a></li>
+                                <li><a href="/login/"><i class="fa fa-external-link"></i>Login</a></li>
+                                <li><a href="/register/"><i class="fa fa-terminal"></i>Register</a></li>
+                            </ul>
+                            <div class="dropdown account-dropdown visible-sm visible-xs">
+                                <a class="dropdown-toggle" href="#" id="account-dropdown" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-user"></i>My Account
+                                <span class="angle"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="account-dropdown">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile/"><i class="fa fa-user"></i>My Account</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/login/"><i class="fa fa-external-link"></i>Login</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/register/"><i class="fa fa-terminal"></i>Register</a></li>
+
+                                </ul>
+                            </div><!-- End .account-dropdown -->
+                        </div><!-- End .pull-left -->
+
+                        <div class="pull-right">
+                           <div class="social-icons pull-right hidden-xs">
+                                <a href="#" class="social-icon icon-facebook" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-twitter" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon icon-google-plus" title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+
+                            </div><!-- End .social-icons -->
+                       </div><!-- End .pull-right -->
+                    </div><!-- End .container -->
+                </div><!-- End .navbar-top -->
+
+                <div class="navbar-inner sticky-menu">
+                    <div class="container">
+                        <div class="navbar-header">
+
+                            <button type="button" class="navbar-toggle btn-circle pull-right collapsed" data-toggle="collapse" data-target="#main-navbar-container">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a class="navbar-brand text-uppercase" href="index.html" title="Formula 1">Formula 1</a>
+
+                            <button type="button" class="navbar-btn btn-icon btn-circle pull-right last visible-sm visible-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>
+
+                        </div><!-- End .navbar-header -->
+
+                        <div class="collapse navbar-collapse" id="main-navbar-container">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active megamenu-container">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home<span class="angle"></span></a>
+                                    <div class="dropdown-menu megamenu" role="menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <ul>
+                                                        <li><a href="index.html">Home </a></li>
+
+                                                    </ul>
+                                                </div><!-- End .col-sm-3 -->
+
+                                            </div><!-- End .row -->
+                                        </div><!-- End .container -->
+                                    </div><!-- End .megamenu -->
+                                </li>
+                                <li class="dropdown megamenu-container">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="angle"></span></a>
+                                    <div class="dropdown-menu megamenu" role="menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <ul>
+                                                        <li><a href="aboutus.html">About - Agency</a></li>
+
+                                                    </ul>
+                                                </div><!-- End .col-sm-3 -->
+
+                                            </div><!-- End .row -->
+                                        </div><!-- End .container -->
+                                    </div><!-- End .megamenu -->
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop<span class="angle"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+
+                                        <li class="dropdown sub-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login<span class="angle"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="login.html">Login - Version 1</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="register.html">Register - Version 1</a></li>
+                                        <li><a href="recover-password.html">Password Recover</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog<span class="angle"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+
+
+                                        <li class="dropdown sub-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog Post<span class="angle"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="single.html">Blog Post</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Us<span class="angle"></span></a>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="contact.html">Contact</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <button type="button" class="navbar-btn btn-icon btn-circle navbar-right last  hidden-sm hidden-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>
+
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container -->
+                </div><!-- End .navbar-inner -->
+            </nav>
+        </header><!-- End #header -->
+
+        <div id="content" role="main" class="no-padding">
+
+            <div id="revslider-container">
+                <div id="revslider">
+                    <ul>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Constructors" data-thumb="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide1.jpg">
+                            <!-- background image -->
+                            <img src="http://gcustomair.appspot.com/styles/boss/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide1.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle lfb ltt"
+                                data-x="center"
+                                data-y="155"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="400"
+                                style="z-index: 10">This is a site dedicated to all things F1
+                            </div>
+
+                            <div class="tp-caption rev-title lfb ltt"
+                                data-x="center"
+                                data-y="210"
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6">2016 Formula 1 stats, standings & Blog
+                            </div>
+
+
+                            <div class="tp-caption rev-text lfb ltt"
+                                data-x="center"
+                                data-y="290"
+                                data-speed ="1000"
+                                data-start="1200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 12">Please feel free to blog about your favorites
+                            </div>
+
+                            <div class="tp-caption rev-btn lfb ltt"
+                                data-x="center"
+                                data-y="360"
+                                data-speed="1000"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                                    <a href="#" class="btn btn-white btn-border radius-lger min-width"><strong>BLOG</strong></a>
+                                    <a href="#" class="btn btn-white radius-lger min-width"><strong>BLOG POST</strong></a>
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Drivers" data-thumb="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide2.jpg">
+                            <!-- background image -->
+                            <img src="http://gcustomair.appspot.com/styles/boss/images/revslider/dummy.png"  alt="slidebg1" data-lazyload="http://gcustomair.appspot.com/styles/boss/images/homesliders/index/slide2.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption rev-subtitle lfb ltt"
+                                data-x="center"
+                                data-y="155"
+                                data-speed="1000"
+                                data-start="900"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="400"
+                                style="z-index: 10">Grand Prix and Race Information
+                            </div>
+
+                            <div class="tp-caption rev-title lfb ltt"
+                                data-x="center"
+                                data-y="210"
+                                data-speed="1000"
+                                data-start="1000"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="600"
+                                style="z-index: 6">Formula 1
+                            </div>
+
+
+                            <div class="tp-caption rev-text lfb ltt"
+                                data-x="center"
+                                data-y="290"
+                                data-speed ="1000"
+                                data-start="1200"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="700"
+                                style="z-index: 12">Our Formula 1 site is strickly for racing fans.
+                            </div>
+
+                            <div class="tp-caption rev-btn lfb ltt"
+                                data-x="center"
+                                data-y="360"
+                                data-speed="1000"
+                                data-start="1400"
+                                data-easing="Power3.easeInOut"
+                                data-endspeed="800"
+                                style="z-index: 14">
+                                    <a href="#" class="btn btn-white btn-border radius-lger min-width"><strong>BLOG</strong></a>
+                                    <a href="#" class="btn btn-white radius-lger min-width"><strong>BLOG POST</strong></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End #revslider -->
+                <a href="#id-to-scroll" class="scroll-btn light" data-offset="-55" data-0="opacity:1" data-top-bottom="opacity:0;" title="Go Down"><span></span></a>
+            </div><!-- End #revslider-container -->
+        </div>
+    </div>
+	{% block body %}{% endblock %}
+
+
+    <script src="http://gcustomair.appspot.com/styles/boss/js/smoothscroll.js"></script>
+
+    <script src="http://gcustomair.appspot.com/styles/boss/js/bootstrap.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.hoverIntent.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.nicescroll.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/waypoints.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/waypoints-sticky.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.debouncedresize.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/retina.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/owl.carousel.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jflickrfeed.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/twitter/jquery.tweet.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/skrollr.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.countTo.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/isotope.pkgd.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.magnific-popup.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.themepunch.tools.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/wow.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/jquery.validate.min.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/contact.js"></script>
+    <script src="http://gcustomair.appspot.com/styles/boss/js/main.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+            // Slider Revolution
+            jQuery('#revslider').revolution({
+                delay:8000,
+                startwidth:1170,
+                startheight:500,
+                fullWidth:"on",
+                fullScreen:"on",
+                hideTimerBar: "off",
+                spinner:"spinner4",
+                navigationStyle: "preview4",
+                soloArrowLeftHOffset:20,
+                soloArrowRightHOffset:20
+            });
+        }());
+    </script>
+    </body>
+</html>
